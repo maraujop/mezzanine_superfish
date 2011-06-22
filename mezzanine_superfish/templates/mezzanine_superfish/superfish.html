@@ -11,8 +11,8 @@
         {% endif %}
 
         {% if page.in_navigation %}
-            <li id="superfishtree-menu-{{ page.html_id }}">
-                <a href="{% url page page.slug %}" class="sf-with-ul 
+            <li id="superfishtree-menu-{{ page.html_id }}" class="sf-with-ul">
+                <a href="{% url page page.slug %}" class=" 
                 {% if page.is_current_or_ascendant %}active{% endif %}
                 {% if not top_level and forloop.first %} first{% endif %}
                 {% if forloop.last %} last{% endif %}">{{ page.title }}</a>
