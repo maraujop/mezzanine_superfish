@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name = "mezzanine_superfish",
@@ -21,5 +21,7 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Framework :: Django",
-    ]
+    ],
+    include_package_data=True,
+    zip_safe=False,
 )
